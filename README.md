@@ -35,7 +35,7 @@ graph TD
     E -- Retry again in one minute --> B
     D --> F[Send mail of the failing services]
     F -- Retrying again in ten minutes --> B
-    F --> H[Read mail and send it to Teams chat]
-    H --> G[Create adaptive card]
+    F --> H[Read mail and create adaptive card]
+    H --> G[Send the adaptive card to Teams chat]
     G --> I[Terminate service]
 ```
