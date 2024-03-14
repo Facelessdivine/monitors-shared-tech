@@ -1,0 +1,21 @@
+2024-03-14 09:20:25,635 - INFO - Response from http://vmq-alfrescona-02.alldata.com:8091/monitor:
+2024-03-14 09:20:25,636 - INFO - Time elapsed for http://vmq-alfrescona-02.alldata.com:8091/monitor: 0.3 seconds 
+
+2024-03-14 09:20:25,636 - INFO - Everything is working in the http://vmq-alfrescona-02.alldata.com:8091/monitor Monitor
+2024-03-14 09:20:25,691 - INFO - Response from http://vmq-alfrescoeu-01.alldata.com:8091/monitor:
+2024-03-14 09:20:25,691 - INFO - Time elapsed for http://vmq-alfrescoeu-01.alldata.com:8091/monitor: 0.36 seconds 
+
+2024-03-14 09:20:25,692 - INFO - Everything is working in the http://vmq-alfrescoeu-01.alldata.com:8091/monitor Monitor
+2024-03-14 09:20:26,255 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-14 09:20:26,256 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.92 seconds 
+
+2024-03-14 09:20:26,256 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-14 09:20:26,514 - INFO - Response from https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor:
+2024-03-14 09:20:26,514 - INFO - Time elapsed for https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor: 1.18 seconds 
+
+2024-03-14 09:20:26,515 - INFO - Everything is working in the https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor Monitor
+2024-03-14 09:20:28,102 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor:
+2024-03-14 09:20:28,103 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor: 2.77 seconds 
+
+2024-03-14 09:20:32,006 - WARNING - Some services are failing in the https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor Monitor: Solr_Production_EG, Solr_Production_DALLAS
+2024-03-14 09:20:32,007 - WARNING - Some of the monitors have services in failure status
