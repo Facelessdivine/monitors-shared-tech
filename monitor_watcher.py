@@ -8,7 +8,8 @@ import pythoncom
 import sys
 import os
 import logging
-
+# import argparse
+from flask import Flask, request, Response
 
 def send_email(subject, body, recipients):
     outlook = win32com.client.Dispatch("Outlook.Application")
@@ -57,7 +58,7 @@ def get_response(link):
         logging.error(f"Failed to fetch response from {link}: {e}")
         return None, None
 
-def process_url(url, recipients, results):
+def process_url(url,environment, recipients, results):
     pythoncom.CoInitialize()
     try:
         result, html = get_response(url)
@@ -77,34 +78,50 @@ def process_url(url, recipients, results):
             del failedServices[0]
             if len(failedServices) > 0:
                 failed = ", ".join(failedServices)
-                send_email(f"{url} failed: {failed}", html, recipients)
+                # send_email(f"<b>{environment}: {failed}</b>", f"<a href={url}>Go to monitor URL</a>" + html, recipients)
                 logging.warning(f"Some services are failing in the {url} Monitor: {failed}")
                 results.append(False)
     finally:
         pythoncom.CoUninitialize()
 
 if __name__ == "__main__":
+    
     # Configurar el registro de eventos
     logging.basicConfig(filename=os.path.abspath('monitor.log'), level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-    while True:
-        monitorsURLS = [
-             "https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor",
-            "https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor",
-            "http://vmq-alfrescona-02.alldata.com:8091/monitor",
-            "http://vmq-alfrescoeu-01.alldata.com:8091/monitor",
-            "https://vmq-alfrescona-02.alldata.com:8445/pet/monitor"
-        ]
-        
+    
+    # env = str(sys.argv[1])
+    monitorsURLS = {
+            'https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor': 'CPP NA QA' ,
+            'https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor': 'CPP EU QA' ,
+            'http://vmq-alfrescona-02.alldata.com:8091/monitor': 'VP NA QA' ,
+            'http://vmq-alfrescoeu-01.alldata.com:8091/monitor': 'VP EU QA' ,
+            'https://vmq-alfrescona-02.alldata.com:8445/pet/monitor': 'PET QA'
+        }
+    # parser = argparse.ArgumentParser(description="Just an example",
+    #                              formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    # parser.add_argument("-a", "--archive", action="store_true", help="archive mode")
+    # parser.add_argument("-v", "--verbose", action="store_true", help="increase verbosity")
+    # parser.add_argument("-B", "--block-size", help="checksum blocksize")
+    # parser.add_argument("--ignore-existing", action="store_true", help="skip files that exist")
+    # parser.add_argument("--exclude", help="files to exclude")
+    # parser.add_argument("src", help="Source location")
+    # parser.add_argument("dest", help="Destination location")
+    # args = parser.parse_args()
+    # config = vars(args)
+    # print(config)
+    
+    # print(dict(filter(lambda e:env in e[1], monitorsURLS.items() ) ) )
+    while True:    
+        break
         threads = []
         results = []
         recipients = ["raul.herrera@autozone.com"]
         # recipients = ["raul.herrera@autozone.com", "saul.bravo@autozone.com"]
-        for url in monitorsURLS:
-            thread = threading.Thread(target=process_url, args=(url,recipients, results))
+        for url,environment in monitorsURLS.items():
+            thread = threading.Thread(target=process_url, args=(url,environment,recipients, results))
             thread.start()
             threads.append(thread)
-        os.system('cls')
+        # os.system('cls')
 
         for thread in threads:
             thread.join()
@@ -121,5 +138,5 @@ if __name__ == "__main__":
         else:
             logging.info("All the services of all the monitors are working correctly")
             print("\n All the services of all the monitors are working correctly \n")
-        countdown(3600)
-        os.system('cls')
+        countdown(600)
+        # os.system('cls')
