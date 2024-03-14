@@ -33,7 +33,7 @@ A[Python service start]  -->  B(Verify monitors)
 
 B  -->  C{Is something wrong}
 
-C  -->  D[Keep]
+C  -->  D[One or more monitors not in optimal status]
 
 C  -->  E[Everyting okay]
 
