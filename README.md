@@ -38,26 +38,4 @@ graph TD
     F --> H[Read mail and send it to Teams chat]
     H --> G[Create adaptive card]
     G --> I[Terminate service]
-graph  TD
-
-A[Python service start]  -->  B(Verify monitors)
-
-B  -->  C{Is something wrong}
-
-C  -->  D[One or more monitors not in optimal status]
-
-C  -->  E[Everyting okay]
-
-E  -- Retry again in one minute -->  B
-
-D  -->  F[Send mail of the failing services]
-
-F  -->  B
-
-F  -->  H[Read mail and send it to Teams chat]
-
-H  -->  G[Create adaptive card]
-
-G  -->  I[Terminate service]
-
 ```
