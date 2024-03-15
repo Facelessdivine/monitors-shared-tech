@@ -8,9 +8,15 @@ import pythoncom
 import sys
 import os
 import logging
+from  dotenv import load_dotenv
+from flask_cors import CORS, cross_origin
 # import argparse
-from flask import Flask, request, Response
+from flask import Flask, jsonify, request, Response
 
+app = Flask(__name__) 
+load_dotenv()
+app.config['CORS_HEADERS'] = 'Content-Type'
+CORS(app)
 def send_email(subject, body, recipients):
     outlook = win32com.client.Dispatch("Outlook.Application")
     mail = outlook.CreateItem(0)
@@ -84,19 +90,23 @@ def process_url(url,environment, recipients, results):
     finally:
         pythoncom.CoUninitialize()
 
-if __name__ == "__main__":
-    
-    # Configurar el registro de eventos
+def mainMethod(project):
     logging.basicConfig(filename=os.path.abspath('monitor.log'), level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-    
     # env = str(sys.argv[1])
-    monitorsURLS = {
+    monitorURLS = {
             'https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor': 'CPP NA QA' ,
             'https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor': 'CPP EU QA' ,
             'http://vmq-alfrescona-02.alldata.com:8091/monitor': 'VP NA QA' ,
             'http://vmq-alfrescoeu-01.alldata.com:8091/monitor': 'VP EU QA' ,
             'https://vmq-alfrescona-02.alldata.com:8445/pet/monitor': 'PET QA'
         }
+    parameter = {}
+    if project:
+        parameter = dict(filter(lambda e:project in e[1].lower().replace(" ", ""), monitorURLS.items() ) )
+    if parameter:
+        monitorURLS = parameter
+
+    
     # parser = argparse.ArgumentParser(description="Just an example",
     #                              formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     # parser.add_argument("-a", "--archive", action="store_true", help="archive mode")
@@ -111,32 +121,52 @@ if __name__ == "__main__":
     # print(config)
     
     # print(dict(filter(lambda e:env in e[1], monitorsURLS.items() ) ) )
-    while True:    
-        break
-        threads = []
-        results = []
-        recipients = ["raul.herrera@autozone.com"]
-        # recipients = ["raul.herrera@autozone.com", "saul.bravo@autozone.com"]
-        for url,environment in monitorsURLS.items():
-            thread = threading.Thread(target=process_url, args=(url,environment,recipients, results))
-            thread.start()
-            threads.append(thread)
+    # while True:    
+    threads = []
+    results = []
+    recipients = ["raul.herrera@autozone.com"]
+    # recipients = ["raul.herrera@autozone.com", "saul.bravo@autozone.com"]
+    for url,environment in monitorURLS.items():
+        thread = threading.Thread(target=process_url, args=(url,environment,recipients, results))
+        thread.start()
+        threads.append(thread)
+    # os.system('cls')
+
+    for thread in threads:
+        thread.join()
+        
+    if any(item is None for item in results):
+        logging.error("One or more connections are down, please verify connection!")
+        print("\n Error: One or more connections are down, please verify connection ! \n")            
+        return {'Error': 'One or more connections are down, please verify connection !'}
+    elif not all(results):
+        logging.warning("Some of the monitors have services in failure status")
+        print("\n Some of the monitors have services in failure status \n")
+        return {'Error': 'Some of the monitors have services in failure status'}
+        # send_email("Monitors failed", "Some of the monitors have services in failure status. Please verify email.", recipients)
+        # print(" \n Waiting before checking again \n")
+#            break
+    else:
+        logging.info("All the services of all the monitors are working correctly")
+        print("\n All the services of all the monitors are working correctly \n")
+        return {'Success': 'All the services of all the monitors are working correctly'}
+    # countdown(600)
         # os.system('cls')
 
-        for thread in threads:
-            thread.join()
-            
-        if any(item is None for item in results):
-            logging.error("One or more connections are down, please verify connection!")
-            print("\n Error: One or more connections are down, please verify connection ! \n")            
-        elif not all(results):
-            logging.warning("Some of the monitors have services in failure status")
-            print("\n Some of the monitors have services in failure status \n")
-            # send_email("Monitors failed", "Some of the monitors have services in failure status. Please verify email.", recipients)
-            print(" \n Waiting before checking again \n")
-#            break
-        else:
-            logging.info("All the services of all the monitors are working correctly")
-            print("\n All the services of all the monitors are working correctly \n")
-        countdown(600)
-        # os.system('cls')
+@app.errorhandler(404)
+def not_found(error=None):
+        response = jsonify({
+                'message': 'Resource Not Found',
+                'status': 404
+        }) #Se define una respuesta para decir el tipo de error que se capturó
+        response.status_code = 404 #Definimos el mensaje del servidor de error 404 para que nos diga algo específico y no solo erro 505 o status 200
+        return response
+    
+@app.route('/run', defaults={'project': {}})
+@app.route('/run/<project>', methods=['GET'])
+def run_monitor(project):
+    return mainMethod(project)
+
+if __name__ == "__main__":
+    app.run(load_dotenv=True)
+    
