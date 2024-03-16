@@ -1,0 +1,188 @@
+2024-03-16 13:36:52,190 - INFO - Serving on http://0.0.0.0:5000
+2024-03-16 13:37:56,179 - INFO - Serving on http://0.0.0.0:5000
+2024-03-16 13:38:11,807 - INFO - Serving on http://0.0.0.0:5000
+2024-03-16 13:42:39,064 - INFO - Response from http://vmq-alfrescona-02.alldata.com:8091/monitor:
+2024-03-16 13:42:39,064 - INFO - Response from http://vmq-alfrescoeu-01.alldata.com:8091/monitor:
+2024-03-16 13:42:39,064 - INFO - Time elapsed for http://vmq-alfrescona-02.alldata.com:8091/monitor: 0.37 seconds 
+
+2024-03-16 13:42:39,064 - INFO - Time elapsed for http://vmq-alfrescoeu-01.alldata.com:8091/monitor: 0.37 seconds 
+
+2024-03-16 13:42:39,064 - INFO - Everything is working in the http://vmq-alfrescona-02.alldata.com:8091/monitor Monitor
+2024-03-16 13:42:39,072 - INFO - Everything is working in the http://vmq-alfrescoeu-01.alldata.com:8091/monitor Monitor
+2024-03-16 13:42:39,747 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:42:39,747 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 1.05 seconds 
+
+2024-03-16 13:42:39,747 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:42:39,976 - INFO - Response from https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor:
+2024-03-16 13:42:39,976 - INFO - Time elapsed for https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor: 1.28 seconds 
+
+2024-03-16 13:42:39,976 - INFO - Everything is working in the https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor Monitor
+2024-03-16 13:42:41,170 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor:
+2024-03-16 13:42:41,170 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor: 2.47 seconds 
+
+2024-03-16 13:42:43,494 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:45:17,520 - INFO - Response from http://vmq-alfrescona-02.alldata.com:8091/monitor:
+2024-03-16 13:45:17,520 - INFO - Response from http://vmq-alfrescoeu-01.alldata.com:8091/monitor:
+2024-03-16 13:45:17,520 - INFO - Time elapsed for http://vmq-alfrescona-02.alldata.com:8091/monitor: 0.36 seconds 
+
+2024-03-16 13:45:17,520 - INFO - Time elapsed for http://vmq-alfrescoeu-01.alldata.com:8091/monitor: 0.36 seconds 
+
+2024-03-16 13:45:17,520 - INFO - Everything is working in the http://vmq-alfrescona-02.alldata.com:8091/monitor Monitor
+2024-03-16 13:45:17,520 - INFO - Everything is working in the http://vmq-alfrescoeu-01.alldata.com:8091/monitor Monitor
+2024-03-16 13:45:18,279 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:45:18,280 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 1.12 seconds 
+
+2024-03-16 13:45:18,282 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:45:18,451 - INFO - Response from https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor:
+2024-03-16 13:45:18,451 - INFO - Time elapsed for https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor: 1.29 seconds 
+
+2024-03-16 13:45:18,451 - INFO - Everything is working in the https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor Monitor
+2024-03-16 13:45:20,085 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor:
+2024-03-16 13:45:20,085 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor: 2.93 seconds 
+
+2024-03-16 13:45:22,739 - WARNING - Some services are failing in the https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor Monitor: Solr_Production_EG, Solr_Production_DALLAS
+2024-03-16 13:45:22,739 - WARNING - Some of the monitors have services in failure status
+2024-03-16 13:49:00,961 - INFO - Serving on http://0.0.0.0:5000
+2024-03-16 13:49:14,474 - INFO - Response from http://vmq-alfrescona-02.alldata.com:8091/monitor:
+2024-03-16 13:49:14,506 - INFO - Response from http://vmq-alfrescoeu-01.alldata.com:8091/monitor:
+2024-03-16 13:49:14,506 - INFO - Time elapsed for http://vmq-alfrescona-02.alldata.com:8091/monitor: 0.36 seconds 
+
+2024-03-16 13:49:14,506 - INFO - Everything is working in the http://vmq-alfrescona-02.alldata.com:8091/monitor Monitor
+2024-03-16 13:49:14,506 - INFO - Time elapsed for http://vmq-alfrescoeu-01.alldata.com:8091/monitor: 0.39 seconds 
+
+2024-03-16 13:49:14,506 - INFO - Everything is working in the http://vmq-alfrescoeu-01.alldata.com:8091/monitor Monitor
+2024-03-16 13:49:15,291 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:49:15,291 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 1.18 seconds 
+
+2024-03-16 13:49:15,291 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:49:15,621 - INFO - Response from https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor:
+2024-03-16 13:49:15,621 - INFO - Time elapsed for https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor: 1.51 seconds 
+
+2024-03-16 13:49:15,621 - INFO - Everything is working in the https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor Monitor
+2024-03-16 13:49:16,943 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor:
+2024-03-16 13:49:16,943 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor: 2.83 seconds 
+
+2024-03-16 13:49:19,358 - WARNING - Some services are failing in the https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor Monitor: Solr_Production_EG, Solr_Production_DALLAS
+2024-03-16 13:49:19,358 - WARNING - Some of the monitors have services in failure status
+2024-03-16 13:51:25,202 - INFO - Response from http://vmq-alfrescoeu-01.alldata.com:8091/monitor:
+2024-03-16 13:51:25,202 - INFO - Time elapsed for http://vmq-alfrescoeu-01.alldata.com:8091/monitor: 0.35 seconds 
+
+2024-03-16 13:51:25,202 - INFO - Everything is working in the http://vmq-alfrescoeu-01.alldata.com:8091/monitor Monitor
+2024-03-16 13:51:25,202 - INFO - Response from http://vmq-alfrescona-02.alldata.com:8091/monitor:
+2024-03-16 13:51:25,202 - INFO - Time elapsed for http://vmq-alfrescona-02.alldata.com:8091/monitor: 0.35 seconds 
+
+2024-03-16 13:51:25,202 - INFO - Everything is working in the http://vmq-alfrescona-02.alldata.com:8091/monitor Monitor
+2024-03-16 13:51:25,870 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:51:25,870 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 1.01 seconds 
+
+2024-03-16 13:51:25,870 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:51:26,090 - INFO - Response from https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor:
+2024-03-16 13:51:26,090 - INFO - Time elapsed for https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor: 1.23 seconds 
+
+2024-03-16 13:51:26,090 - INFO - Everything is working in the https://vmq-alfrescoeu-01.alldata.com:8446/cpp/monitor Monitor
+2024-03-16 13:51:27,533 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor:
+2024-03-16 13:51:27,533 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor: 2.68 seconds 
+
+2024-03-16 13:51:30,183 - WARNING - Some services are failing in the https://vmq-alfrescona-02.alldata.com:8446/cpp/monitor Monitor: Solr_Production_EG, Solr_Production_DALLAS
+2024-03-16 13:51:30,183 - WARNING - Some of the monitors have services in failure status
+2024-03-16 13:53:45,705 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:53:45,705 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 1.32 seconds 
+
+2024-03-16 13:53:45,705 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:53:45,705 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:54:02,041 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:54:02,041 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.91 seconds 
+
+2024-03-16 13:54:02,041 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:54:02,041 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:08,382 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:08,382 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.94 seconds 
+
+2024-03-16 13:55:08,382 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:08,382 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:17,325 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:17,325 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.83 seconds 
+
+2024-03-16 13:55:17,325 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:17,325 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:24,310 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:24,310 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.89 seconds 
+
+2024-03-16 13:55:24,310 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:24,310 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:36,506 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:36,506 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.93 seconds 
+
+2024-03-16 13:55:36,506 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:36,506 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:39,383 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:39,384 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.87 seconds 
+
+2024-03-16 13:55:39,386 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:39,386 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:42,239 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:42,239 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.85 seconds 
+
+2024-03-16 13:55:42,239 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:42,239 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:45,083 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:45,083 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.83 seconds 
+
+2024-03-16 13:55:45,083 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:45,083 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:55:47,913 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:55:47,913 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.82 seconds 
+
+2024-03-16 13:55:47,913 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:55:47,913 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:56:27,207 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:56:27,207 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 1.03 seconds 
+
+2024-03-16 13:56:27,207 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:56:27,207 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:56:30,053 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:56:30,053 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.83 seconds 
+
+2024-03-16 13:56:30,053 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:56:30,053 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:56:32,946 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:56:32,946 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.89 seconds 
+
+2024-03-16 13:56:32,946 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:56:32,946 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:56:35,806 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:56:35,806 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.85 seconds 
+
+2024-03-16 13:56:35,806 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:56:35,806 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:56:38,682 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:56:38,682 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.87 seconds 
+
+2024-03-16 13:56:38,682 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:56:38,682 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:58:01,769 - INFO - Serving on http://0.0.0.0:5000
+2024-03-16 13:58:06,540 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:58:06,540 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.99 seconds 
+
+2024-03-16 13:58:06,540 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:58:06,540 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:58:09,346 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:58:09,346 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.8 seconds 
+
+2024-03-16 13:58:09,346 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:58:09,346 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:58:12,235 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:58:12,235 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.88 seconds 
+
+2024-03-16 13:58:12,235 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:58:12,235 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:58:15,062 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:58:15,062 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.82 seconds 
+
+2024-03-16 13:58:15,062 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:58:15,062 - INFO - All the services of all the monitors are working correctly
+2024-03-16 13:58:17,914 - INFO - Response from https://vmq-alfrescona-02.alldata.com:8445/pet/monitor:
+2024-03-16 13:58:17,914 - INFO - Time elapsed for https://vmq-alfrescona-02.alldata.com:8445/pet/monitor: 0.84 seconds 
+
+2024-03-16 13:58:17,914 - INFO - Everything is working in the https://vmq-alfrescona-02.alldata.com:8445/pet/monitor Monitor
+2024-03-16 13:58:17,914 - INFO - All the services of all the monitors are working correctly
